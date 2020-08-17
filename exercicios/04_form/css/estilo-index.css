@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.titulo-secao span {
+    font-size: 1.5em;
+    color: #001638;
+
+    font-weight: bold;
+}
+.dados {
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grupo {
+    margin: 2px;
+    width: 100%;
+    display: inline-flex;
+}
+.titulo {
+    margin-right: 4px;
+    background-color: #acbdd4;
+    padding: 15px;
+    width: 40%;
+    height: auto;
+}
+.titulo span{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #001638;
+}
+.input {
+    display: inline-flex;
+    width: 60%;
+    padding: 10px;
+    background-color: #cfd8e4;
+    height: auto;
+}
+.input-type2{
+    width: 60%;
+    padding: 10px;
+    background-color: #cfd8e4;
+    height: auto;
+}
+.input-type2 span{
+    font-size: 0.8em;
+    padding:5px;
+    vertical-align: middle;
+}
+.input-type2 input,select, textarea{
+    width: 40%;
+    height: 25px ;
+}
+.input input,select, textarea{
+    width: 60%;
+    height: 30px ;
+}
+.input-radio{
+    width: 10% !important;
+    height: 12px !important;
+}
+.grupo-interno input {
+    width: 15%;
+    height: 18px;
+}
+.grupo-interno span {
+    padding: 0px;
+}
