@@ -29,11 +29,16 @@ body{
     padding: 15px;
     width: 40%;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 .titulo span{
     font-weight: bold;
     text-transform: uppercase;
     color: #001638;
+    font-size: 0.8em;
+
 }
 .input {
     display: inline-flex;
@@ -71,4 +76,18 @@ body{
 }
 .grupo-interno span {
     padding: 0px;
+}
+.input-style-wrong{
+    background: url("../img/wrong.gif");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #fff;
+}
+
+@media(max-width: 768px ){
+    .dados{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
