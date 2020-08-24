@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link href="css/estilo-index.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="dados">
+        <form action="#" method="POST">
+        <div class="grupo">
+            <div class="titulo-secao"><span>1. Dados Pessoais </span></div>
+            
+        </div>    
+        <div class="grupo">
+            <div class="titulo"><span>Nome: </span></div>
+            <div class="input"><input type="text" class="input-style-wrong" name="nome" placeholder="Digite seu Nome" required ></div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>Data de nascimento: </span></div>
+            <div class="input"><input type="date"   name="dataNasc"></div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>Estado Civil: </span></div>
+            <div class="input">
+                <select>
+                    <option value="-1" selected>Selecione o estado Civil</option>
+                    <option value="1" >Solteiro</option>
+                    <option value="2" >Casado</option>
+                    <option value="3" >Viúvo</option>
+                    <option value="4" >Divorciado</option>
+                </select>
+            </div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>Sexo: </span></div>
+            <div class="input">
+                <input type="radio" class="input-radio" name="gender" value="masculino"><span>Masculino</span>
+                <input type="radio" class="input-radio" name="gender" value="feminino"><span>Feminino</span>
+            </div>
+        </div>
+
+        <div class="grupo">
+            <div class="titulo-secao"><span>2. Objetivo </span></div>
+        </div>    
+        <div class="grupo">
+            <div class="titulo"><span>Objetivo: </span></div>
+            <div class="input"><textarea name='textarea' class="input-style-wrong"  style="height: 150px;" placeholder="Digite seu objetivo"></textarea></div>
+        </div>
+    
+        <div class="grupo">
+            <div class="titulo-secao"><span>3. Contato </span></div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>Endereço: </span></div>
+            <div class="input"><input type="text" class="input-style-wrong" placeholder="Digite seu endereço" name="endereco" required></div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>Cidade/Estado: </span></div>
+            <div class="input"><input type="text" class="input-style-wrong" placeholder="Digite sua cidade"  name="cidade" required>&nbsp<input placeholder="Digite seu estado"  class="input-style-wrong" type="text" name="estado" required></div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>CEP: </span></div>
+            <div class="input"><input type="text" class="input-style-wrong"  maxlength="13" pattern="[0-9]{5}-[0-9]{3}" name="cep" placeholder="Digite seu CEP no formato 99999-999" required> </div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>Telefone: </span></div>
+            <div class="input"><input type="tel" class="input-style-wrong" maxlength="15" pattern="\([0-9]{2}\) [0-9] {4,6} - [0-9] {3,4}" name="telefone" placeholder="Digite seu Telefone no formato (99) 9999-999" required> </div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>E-mail: </span></div>
+            <div class="input"><input type="email" class="input-style-wrong" placeholder="Digite seu email" name="email" required="required"></div>
+        </div>
+        <div class="grupo">
+            <div class="titulo"><span>Rede Social: </span></div>
+            <div class="input-type2">
+                <div class="grupo">
+                    <img src="img/face.png" width="20" height="20">
+                    <span> https://facebook.com/</span>
+                    <input type="text" placeholder="Perfil Facebook" name="perfilFacebook">
+                </div>
+                <div class="grupo">
+                    <img src="img/linkedin.png" width="20" height="20">
+                    <span> https://linkedin.com/</span>
+                    <input type="text" placeholder="Perfil Linkedin" name="perfilLinkedin">
+                </div>
+                <div class="grupo">
+                    <img src="img/skype.png" width="20" height="20"> 
+                    <input type="text" placeholder="Perfil Skype" name="perfilSkype">
+                </div>
+                
+
+
+            
+            </div>
+        </div>
+
+        <div class="grupo">
+            <div class="titulo-secao"><span>4. Conhecimentos </span></div>
+        </div>
+
+        <div class="grupo">
+            <div class="titulo"><span>Linguagens de Programação: </span></div>
+            <div class="input-type2">
+               <div class="grupo-interno"><input type="checkbox" name='c-c++'> <span>C/C++</span></div>
+               <div class="grupo-interno"><input type="checkbox" name="java"> <span>Java</span></div>
+               <div class="grupo-interno"><input type="checkbox" name="vsbasic"> <span>Visual Basic</span></div>
+               <div class="grupo-interno"><input type="checkbox" name=".net"> <span>.Net</span></div>
+               <div class="grupo-interno"><input type="checkbox" name="php"> <span>PHP</span></div>
+               <div class="grupo-interno"><input type="checkbox" name="python"> <span>Python</span></div>
+               <div class="grupo-interno"><input type="checkbox" name="html"> <span>HTML</span></div>
+
+            </div>
+        </div>
+
+        <div class="grupo">
+            <div class="titulo"><span>Idiomas: </span></div>  
+                <div class="input">
+                    <span style="padding-top: 5px; margin-right: 5px;">Inglês</span>
+                    <select name="inglesNivel">
+                        <option value="-1" selected>Nível</option>
+                        <option value="basico">Básico</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                    <span style="padding-top: 5px; margin-right: 5px; margin-left: 5px;">Espanhol</span>
+                    <select name="espanholNivel">
+                        <option value="-1" selected>Nível</option>
+                        <option value="basico">Básico</option>
+                        <option value="intermediario">Intermediário</option>
+                        <option value="avancado">Avançado</option>
+                    </select>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        </form>
+    </div>
+</div>
+
+
+    
+</body>
+</html>
