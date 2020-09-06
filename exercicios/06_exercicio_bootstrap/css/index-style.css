@@ -1,0 +1,24 @@
+.title-slider {
+    width: 100%;
+    height: 800px;
+    position: fixed;
+    text-align: left;
+    background-color: #fff;
+}
+.title{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding-top: 200px;
+    text-align: center;
+}
+.title-slider span {
+    margin-left: auto;
+    margin-top: auto;
+    display: grid;
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+.marketing{
+    margin-top: 6px !important;
+}
