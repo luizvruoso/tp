@@ -1,0 +1,47 @@
+.title-slider {
+    width: 100%;
+    color:#3a3a3a;
+    position: absolute;
+    text-align: left;
+}
+.title{
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+    text-align: center;
+}
+.title-slider span {
+    margin-left: auto;
+    margin-top: auto;
+    display: grid;
+    font-size: 3.5em;
+    font-weight: bolder;
+}
+.marketing{
+    margin-top: 6px !important;
+}
+.carousel-item.active img {
+    height: 500px !important;
+}
+#section-about-us{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#section-img-michael img{
+    max-width: 100%;
+}
+#section-desc-dunder p{
+    margin-top: 20px;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: justify;
+}
+#dialog{
+    width: 100%; 
+    height: auto;
+    display: none;
+    position: fixed;
+    top:90px;
+}
