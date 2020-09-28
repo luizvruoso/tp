@@ -1,0 +1,182 @@
+var dados = [{
+        "posicao": 9,
+        "img": "img/miracle-musical.png",
+        "resposta": "Miracle Musical"
+    },
+    {
+        "posicao": 16,
+        "img": "img/nano-album.jpg",
+        "resposta": "Nano"
+    },
+    {
+        "posicao": 5,
+        "img": "img/the-cure.jpeg",
+        "resposta": "The Cure"
+    },
+    {
+        "posicao": 17,
+        "img": "img/bad-flower.jpg",
+        "resposta": "BadFlower"
+    },
+    {
+        "posicao": 7,
+        "img": "img/ty-scientist.jpg",
+        "resposta": "Thank You Scientist"
+    },
+    {
+        "posicao": 8,
+        "img": "img/church-skull.jpg",
+        "resposta": "Church of The Cosmic Skull"
+    },
+    {
+        "posicao": 1,
+        "img": "img/avatar.jpg",
+        "resposta": "Avatar"
+    },
+    {
+        "posicao": 18,
+        "img": "img/dope.jpg",
+        "resposta": "Dope"
+    },
+    {
+        "posicao": 13,
+        "img": "img/tally.png",
+        "resposta": "Tally Hall"
+    },
+    {
+        "posicao": 4,
+        "img": "img/aurora.jpg",
+        "resposta": "AURORA"
+    },
+    {
+        "posicao": 19,
+        "img": "img/emigrate.jpg",
+        "resposta": "Emigrate"
+    },
+    {
+        "posicao": 30,
+        "img": "img/ghost.jpg",
+        "resposta": "Ghost"
+    }
+
+
+
+
+];
+var bd = [{
+        "nome": "Queens of the Stone Age",
+    },
+    {
+        "nome": "Avatar",
+
+    },
+    {
+        "nome": "Haken",
+
+    },
+    {
+        "nome": "Houra",
+    },
+    {
+        "nome": "AURORA",
+    },
+    {
+        "nome": "The Cure",
+    },
+    {
+        "nome": "Eluveitie",
+    },
+    {
+        "nome": "Thank You Scientist",
+    },
+    {
+        "nome": "Church of The Cosmic Skull",
+
+    },
+    {
+        "nome": "Miracle Musical",
+
+    },
+    {
+        "nome": "Tenacious D",
+
+    },
+    {
+        "nome": "The Juice is Okay",
+
+    },
+    {
+        "nome": "Psychedelic Porn Crumpets",
+
+    },
+    {
+        "nome": "Tally Hall",
+
+    },
+    {
+        "nome": "Poppy",
+
+    },
+    {
+        "nome": "The Protomen",
+
+    },
+    {
+        "nome": "Nano",
+    },
+    {
+        "nome": "BadFlower",
+
+    },
+    {
+        "nome": "Dope",
+
+    },
+    {
+        "nome": "Emigrate",
+
+    },
+    {
+        "nome": "New Politics",
+
+    },
+    {
+        "nome": "Get Scared",
+
+    },
+    {
+        "nome": "Blue Oyster Cult",
+
+    },
+    {
+        "nome": "Leonard Cohen",
+
+    },
+    {
+        "nome": "Palaye Royale",
+
+    },
+    {
+        "nome": "Queen",
+
+    },
+    {
+        "nome": "The Police",
+
+    },
+    {
+        "nome": "Jimmy Hendrix",
+
+    },
+    {
+        "nome": "ABBA",
+
+    },
+    {
+        "nome": "IDKHOW",
+
+    },
+    {
+        "nome": "Ghost",
+    },
+];
