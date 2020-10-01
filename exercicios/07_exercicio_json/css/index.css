@@ -16,3 +16,20 @@
     margin: 10px;
     padding: 20px;
 }
+#divTotal{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left:50px;
+    padding-right: 50px;
+}
+#ihaaDiv, #erradoDiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    
+}

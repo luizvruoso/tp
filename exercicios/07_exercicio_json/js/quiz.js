@@ -1,11 +1,24 @@
 //A PARTIR DO ALBUM, DESCUBRA O ARTISTA
-console.log(dados);
-console.log(bd);
+
+var dados;
+var bd ;
 function getRandomArbitrary(min, max) {
   let aux =  Math.random() * (max - min) + min;
 
   return Math.round(aux);
 }
+
+function confereEquals(DadoConferencia, vetor){
+  for (let i=0; i< vetor.length; i++){
+    if(vetor[i] == DadoConferencia){
+      return true;
+    }
+  }
+  return false;
+
+  
+}
+
 function getCardsOps(auxRand){
 
   let auxRandPosicaoResposta = getRandomArbitrary(0,3); //sorteia a posicao onde vai estar a resposta
@@ -15,18 +28,17 @@ function getCardsOps(auxRand){
   for(let i=0; i<4; i++){
 
     aux = getRandomArbitrary(0, (bd.length)-1);
+    //console.log(aux);
 
-    if(!valoresJaUsados.findIndex( dado => dado == aux ) ){
-      while(!valoresJaUsados.findIndex( dado => dado == aux)){
+    if(confereEquals(aux, valoresJaUsados)){
+      while(confereEquals(aux, valoresJaUsados)){
         aux = getRandomArbitrary(0, (bd.length)-1);
-        //console.log("Maaaoi");
-
       }
-    }else{
-      valoresJaUsados.push(aux);
-
     }
-    //console.log(valoresJaUsados);
+
+    valoresJaUsados.push(aux);
+
+    
 
     if(i == auxRandPosicaoResposta){
       //console.log(dados[auxRand].posicao);
@@ -47,9 +59,14 @@ function confereCallProximo(valorSelecionadoNoBanco, validade){
   
   if(validade == 1){
     console.log("ACERTOU"+document.getElementById('total').value);
-    document.getElementById('total').innerHTML = parseInt(document.getElementById('total').innerHTML)+30;
+    document.getElementById('total').innerHTML = parseInt(document.getElementById('total').innerHTML)+getRandomArbitrary(100, 250);
+    document.getElementById("ihaaDiv").style.display = "block";
+    setTimeout(function(){  document.getElementById("ihaaDiv").style.display = "none"; }, 1000);
+
   }else{
-    console.log("ERROU");
+    document.getElementById('total').innerHTML = parseInt(document.getElementById('total').innerHTML)-getRandomArbitrary(85, 200);
+    document.getElementById("erradoDiv").style.display = "block";
+    setTimeout(function(){  document.getElementById("erradoDiv").style.display = "none"; }, 1000);
   }
   delete dados[valorSelecionadoNoBanco];
   //console.log(dados);
@@ -66,24 +83,29 @@ function confereEndGame(){
 }
 
 function initGame(){
+
+  console.log(bd);
   console.log(dados);
+  document.getElementById("botao-reset").innerHTML = "";
   var auxRand = getRandomArbitrary(0, (dados.length)-1);
   //console.log("Valor Randomico: "+ auxRand);
   document.getElementById("opcoes").innerHTML = "";
 
-  if(dados[auxRand]){
-    document.getElementById("img").innerHTML = "<img width='400' height='auto' src='"+dados[auxRand].img+"'>";
+  if(dados[auxRand] ){
+    document.getElementById("img").innerHTML = "<img width='350' height='auto' src='"+dados[auxRand].img+"'>";
   }else{
     
     while(!dados[auxRand]){
       console.log("Valor Randomico: "+ dados[auxRand]);
       auxRand = getRandomArbitrary(0, (dados.length)-1);
       if(confereEndGame()){
-       // console.log('oi');
-        break;
+          document.getElementById("img").innerHTML = "";
+          document.getElementById("botao-reset").innerHTML = '<button onclick="location.reload()" class="card1">Reiniciar Jogo </button>';
+          return;
+       
       }
     }
-    document.getElementById("img").innerHTML = "<img width='500' height='auto' src='"+dados[auxRand].img+"'>";
+    document.getElementById("img").innerHTML = "<img width='350' height='auto' src='"+dados[auxRand].img+"'>";
   }
   
 
